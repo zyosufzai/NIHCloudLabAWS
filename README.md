@@ -20,6 +20,7 @@ Use this repository to learn about how to use AWS by exploring the linked resour
 + [Virtual Machines in EC2](#vm)
 + [Disk Images](#im)
 + [SageMaker Notebooks](#sag)
++ [Amazon Bedrock](#abr)
 + [Creating a Conda Environment](#co)
 + [Managing Containers and Code Repositories](#dock)
 + [Clusters](#clu)
@@ -77,6 +78,9 @@ SageMaker is the AWS ML/AI development platform, as well as the hosted/managed J
 Follow our [SageMaker Notebook guide](/docs/Jupyter_notebook.md) to learn how to spin up an instance and walk through an example notebook focused on genome-wide association studies.
 
 Amazon recently launched a new IDE environment called [Sagemaker Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html), which we recommend for Cloud Lab users. To launch Studio, you will need to first set up a Domain which you can read more about [here](https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio-onboard.html). Once launched, you can use the normal Sagemaker notebook features, except that you can resizes your VM on the fly. You can also execute a whole ML/AI pipeline, including training, deploying, and monitoring, and you have ready access to [AWS Jumpstart Models](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-jumpstart.html) for easy to deploy large language models. If you do try deploying one of these models and run into a quota limit, follow [these instructions](https://repost.aws/knowledge-center/sagemaker-resource-limit-exceeded-error). You can also launch Foundation Models directly from a notebook on the main Sagemaker menu on the left: `Jumpstart` > `Foundation Models` > `View Model` > `Open Notebook in Studio`. You do have to have a domain and user already created (see above).
+
+## **Amazon Bedrock** <a name="abr"></a>
+Amazon Bedrock is a managed service that allows you to create generative AI models or choose from the array of foundation models avaiable on the console that best suite your usecase. Some usecases include text generation, chatbots, search, text summarization, image generization, and personalization which can be utilized on the console or in an instance through its API. Currently users are only able to preview this service by navigating to `Amazon Bedrock` via the search bar, once on the page click on **Sign up for preview**, then fill out the form and click submit. For more information visit the following documentation [here](https://aws.amazon.com/bedrock/).
 
 ## **Creating a Conda Environment** <a name="co"></a>
 Virtual environments allow you to manage package versions without having package conflicts. For example, if you needed Python 3 for one analysis, but Python 2.7 for another, you could create separate environments to use the two versions of Python. One of the most popular package managers used for creating virtual environments is the [conda package manager](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html#:~:text=A%20conda%20environment%20is%20a,NumPy%201.6%20for%20legacy%20testing). 
